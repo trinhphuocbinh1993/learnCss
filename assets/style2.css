@@ -1,0 +1,145 @@
+.parallax {
+    /* The image used */
+    background-image: url("./smokey1.jpg!d");
+  
+    /* Set a specific height */
+    min-height: 100vh;
+    margin: 0px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.sec1-text1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+.sec1-text2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2rem;
+}
+.sec2-text1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+.sec2-text2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+.avatar1 {
+    
+    max-width:100%;
+    height: auto; 
+    position: absolute;
+   vertical-align: middle;
+   border-style: none;
+   box-sizing: border-box;
+}
+   .avatar2 {
+    
+    max-width:100%;
+    height: auto; 
+    position: relative;
+   vertical-align: middle;
+   border-style: none;
+   box-sizing: border-box;
+/* 
+    
+    left: 80%;
+    transform: translate(-50%,0);
+    margin: auto;
+    display: block; */
+}
+.margin-sec2-text3{
+    margin: 100px 0px
+}
+.col-lg-12{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+.col-lg-7{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+.sec2-text3{
+    font-family: 'Andika', sans-serif;
+    font-size: 2.5rem;
+}
+.sec2-text4{
+    font-family: 'Jura', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+/* for id of elements */
+.software{
+    width: 60px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+display: block;
+-webkit-filter:  grayscale(100%) brightness(60%) contrast(10000000%);
+    opacity: .3;
+    }
+    .margin-sec3{
+        margin: 1px 0px
+    }
+
+/* for parallax 2nd*/
+.parallax2 {
+    /* The image used */
+    background-image: url("./dark-night-forest-wallpaper-hd.jpg");
+  
+    /* Set a specific height */
+    min-height: 100vh;
+    margin: 0px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* for software */
+.software{
+    padding: 8px;
+    width: 60px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    -webkit-filter:  grayscale(100%) brightness(60%) contrast(10000000%);
+        opacity: .3;
+    }
+    /* for gallery*/
+    .box{
+margin-bottom: 30px;
+    }
+    .grey_gone {
+        filter: gray;
+        /* IE6-9 */
+        -webkit-filter: grayscale(1);
+        /* Google Chrome & Safari 6+ */
+      }
+      .grey_gone:hover {
+        filter: none;
+        -webkit-filter: none;
+      }
+    /* for */

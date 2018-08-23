@@ -1,0 +1,129 @@
+/* for vertical text */
+
+
+@media (min-width:300px){
+  p.vertical-text-odd {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: sans-serif;
+    font-size:1rem;
+    background-color: #c7cbce;
+    margin-right: 0;
+    padding: 10px 0px 10px 10px;
+    text-align: center;
+  }
+    /* for vertical text */
+  
+  p.vertical-text-even {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: sans-serif;
+    font-size:1rem;
+    background-color: #dfe3e6;
+    margin-right: 0px;
+    padding: 10px 0px 10px 10px;
+    text-align: center;
+    /* border-top: 5px solid black; */
+  }
+}
+
+
+@media (min-width:700px){
+  p.vertical-text-odd {
+    font-size:2rem;
+    margin: 0;
+  }
+    /* for vertical text */
+  
+  p.vertical-text-even {
+    font-size:2rem;
+    margin: 0;
+  }
+}
+
+.row{
+  overflow: hidden;
+  margin: 0;
+}
+
+body{
+  margin: 0px;
+  position: relative;
+  
+}
+
+.portfolio-section { 
+  display: block;
+}
+
+/* for id of elements */
+#software{
+width: 60px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+display: block;
+-webkit-filter:  grayscale(100%) brightness(60%) contrast(10000000%);
+    opacity: .3;
+}
+
+/*for avatar*/
+.avatar {
+  height: 100%; 
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  margin: auto;
+  display: block;
+}
+
+/* for center-content*/
+.center-content-about{
+  margin: auto;
+    width: 100%;
+    /* border: 3px solid #73AD21; */
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+.center-content-experience{
+  margin: auto;
+  margin-top: 80px;  
+    /* border: 3px solid #73AD21; */
+    padding: auto;
+    text-align: center;
+}
+.center-content-skill{
+  margin: auto;
+    width: 100%;
+    /* border: 3px solid #73AD21; */
+    padding: 300px 50px;
+    text-align: center;
+}
+.center-content-contact{
+  margin: auto;
+  margin-top: 100px;
+  width: 100%;
+  /* border: 3px solid #73AD21; */
+  padding: 200px 50px;
+  text-align: center;
+}
+
+/* for parallax */
+.parallax {
+  /* The image used */
+  background-image: url("./smokey1.jpg!d");
+
+  /* Set a specific height */
+  min-height: 100vh;
+  margin: 0px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col{
+  padding-right: 0px;
+  padding-left: 0px;
+}
