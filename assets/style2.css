@@ -142,4 +142,26 @@ margin-bottom: 30px;
         filter: none;
         -webkit-filter: none;
       }
-    /* for */
+    /* for contact*/
+    .form-control {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: white;
+        background-color: #333;
+        border: 1px solid #555;
+        border-radius: 0rem;
+    }
+    .form-control::placeholder {
+       
+        color: #555;
+        
+    }
+    .btn-outline-secondary{
+        color: #555;
+        border-color: #555;
+    }
+    .btn-outline-secondary:hover{
+        border-color: white;
+        background-color: #555;
+    }
