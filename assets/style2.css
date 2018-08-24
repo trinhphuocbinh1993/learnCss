@@ -165,3 +165,6 @@ margin-bottom: 30px;
         border-color: white;
         background-color: #555;
     }
+    .modal-dialog{
+        margin-top: 150px;
+    }
