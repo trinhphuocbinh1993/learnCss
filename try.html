@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style2.css">
+    
+</head>
+
+
+<body>
+    <div class="example-classname" style="background-color: dodgerblue; height:100vh ">hello</div>
+    <div class="example-classname" style="background-color: red; height:100vh">aaaaaaaaaaaa</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./assets/Scrollify-master/jquery.scrollify.js"></script>
+<script>
+    $(function () {
+        $.scrollify({
+            section: ".example-classname",
+            sectionName : "section-name",
+            interstitialSection : "",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset : 0,
+            scrollbars: true,
+            standardScrollElements: "",
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll:true,
+            before:function() {},
+            after:function() {},
+            afterResize:function() {},
+            afterRender:function() {}
+        });
+    });
+</script>
+</html>

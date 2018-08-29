@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Trịnh Phước Bình</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/style2.css">
@@ -23,7 +22,7 @@
 </head>
 
 <body>
-    <section id="home">
+    <section class="example-classname" id="home">
         <div class="parallax"></div>
         <div class="centered">
             <p class="sec1-text1">Hello, nice to meet you, welcome to my page ! </p>
@@ -72,7 +71,7 @@
                 </div>
             </div>
         </nav>
-        <section id="about">
+        <section class="example-classname" id="about">
             <div class="container">
                 <div class="row margin-sec2-text3">
                     <div class="col-lg-7">
@@ -89,8 +88,7 @@
                                 Quan khóa 2011-2015.
                                 <br>
                                 <br> Những lúc rảnh rỗi thích nghe nhạc, ca hát, chơi &amp; nghiên cứu những loại nhạc cụ
-                                khác nhau, thể loại nhạc yêu thích thì rất là nhiều - trừ Vinahouse - thể loại không thể
-                                nuốt nổi.
+                                khác nhau, thể loại nhạc yêu thích thì rất là nhiều - trừ Vinahouse.
                                 <br>
                                 <br> Đôi khi cũng tập vẽ vời và có vài tác phẩm hay ho, thích DIY, chế tác sản phẩm từ gỗ
                                 và những thứ độc lạ, thích đi du lịch, thích mài mò những thứ mới lạ trong thiết kế, sáng
@@ -113,7 +111,7 @@
             </div>
         </section>
 
-        <section id="experience">
+        <section class="example-classname" id="experience">
             <div style="background-color: #f8f9fa;">
                 <div class="container">
                     <div class="row margin-sec3">
@@ -266,7 +264,7 @@
 
 
 
-        <section id="skill">
+        <section class="example-classname" id="skill">
             <div class="container">
                 <div class="row margin-sec3">
                     <div class="col-lg-12">
@@ -360,7 +358,7 @@
         </section>
 
 
-        <section id="gallery">
+        <section class="example-classname" id="gallery">
             <div style="background-color: #f8f9fa;">
                 <div class="container">
                     <div class="row margin-sec3">
@@ -569,7 +567,7 @@
             </div>
         </section>
 
-        <section id="contact" class="porfolio-section">
+        <section class="example-classname" id="contact">
             <div style="background-color: #333; color: white;">
                 <div class="container">
                     <div class="row margin-sec3">
@@ -654,7 +652,7 @@
                                                         <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="surname">Your message for us *</label>
+                                                        <label for="surname">Your message *</label>
                                                         <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
                                                     </div>
                                                     <div class="text-center">
@@ -679,13 +677,37 @@
         </section>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="./assets/Scrollify-master/jquery.scrollify.js"></script>
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".example-classname",
+                sectionName : "section-name",
+                interstitialSection : "",
+                easing: "easeOutExpo",
+                scrollSpeed: 1100,
+                offset : 0,
+                scrollbars: true,
+                standardScrollElements: "",
+                setHeights: true,
+                overflowScroll: true,
+                updateHash: true,
+                touchScroll:true,
+                before:function() {},
+                after:function() {},
+                afterResize:function() {},
+                afterRender:function() {}
+            });
+        });
+    </script>
+
+
     <script>
         $(document).on('click', '[data-toggle="lightbox"]', function (event) {
             event.preventDefault();
