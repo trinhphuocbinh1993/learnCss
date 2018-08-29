@@ -685,14 +685,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script src="./assets/Scrollify-master/jquery.scrollify.js"></script>
     <script>
-    function scroll_page(){
-    if(window.innerWidth<1260){
-        if(window.innerHeight > window.innerWidth){
-            $.scrollify.disable();
-        }
-    }
-    else{
-        $(function() {
+        $(function () {
             $.scrollify({
                 section: ".example-classname",
                 sectionName : "section-name",
@@ -705,36 +698,43 @@
                 setHeights: true,
                 overflowScroll: true,
                 updateHash: true,
-                touchScroll:true,
+                touchScroll:false,
                 before:function() {},
                 after:function() {},
                 afterResize:function() {},
-                afterRender:function() {},
+                afterRender:function() {}
             });
-         });
-    }
-}
-
-window.addEventListener('resize', function(event){
-    scroll_page();
-});</script>
-
-
+        });
+    </script>
     <script>
+
+        // $(function() {
+        //     if (window.innerWidth > 767) {
+        //         $(function () {
+        //             $.scrollify({
+        //                 section: ".example-classname"
+        //             });
+        //         });
+        //     }
+        // });
+
+
+
         $(document).on('click', '[data-toggle="lightbox"]', function (event) {
             event.preventDefault();
             $(this).ekkoLightbox();
         });
-    </script>
-    <!-- <script language="javascript" type="text/javascript" src="jquery-1.8.2.js"></script> -->
-    <!-- <script src="js/jquery-ui-1.9.0.custom.js"></script> -->
-    <script language="javascript" type="text/javascript">
+
         $(document).ready(function () {
             $('#trigger').click(function () {
                 $("#dialog").dialog();
             });
-        });                  
+        });
+
     </script>
+    <!-- <script language="javascript" type="text/javascript" src="jquery-1.8.2.js"></script> -->
+    <!-- <script src="js/jquery-ui-1.9.0.custom.js"></script> -->
+
 
 </body>
 
