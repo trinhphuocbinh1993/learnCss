@@ -685,7 +685,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script src="./assets/Scrollify-master/jquery.scrollify.js"></script>
     <script>
-        $(function () {
+    function scroll_page(){
+    if(window.innerWidth<1260){
+        if(window.innerHeight > window.innerWidth){
+            $.scrollify.disable();
+        }
+    }
+    else{
+        $(function() {
             $.scrollify({
                 section: ".example-classname",
                 sectionName : "section-name",
@@ -702,10 +709,15 @@
                 before:function() {},
                 after:function() {},
                 afterResize:function() {},
-                afterRender:function() {}
+                afterRender:function() {},
             });
-        });
-    </script>
+         });
+    }
+}
+
+window.addEventListener('resize', function(event){
+    scroll_page();
+});</script>
 
 
     <script>
