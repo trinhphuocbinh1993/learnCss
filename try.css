@@ -1,57 +1,59 @@
-body {
-    padding-top: 60px;
-  }
-  header {
-    background-color: blue;
-    padding: 25px 0;
-    color: white;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  #menu {
-    margin: 0;
-    padding: 0;
-    max-width: 50%;
-    display: block;
+.funLoveDim {width:80%; margin:0 auto; }
+.funLove {   
+    width:80%; 
     margin: 0 auto;
-  }
-  
-  #menu li {
-    list-style: none;
+    position: absolute;  
+      background:url(http://placekitten.com/1200/1000) no-repeat top center fixed; 
+    height:700px;     
+    float:left;  
+  background-size: cover;
+    
+}  
+
+.funLove img {
+    max-width: 100%; height: auto; 
+    
+}
+.funLove .caption {
+    position: absolute;
+    top: 1em;
+    left: -4%; 
+    font: 3.9vw/5.5vw "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fcfcef;
+    text-shadow: 0 -2px 1px rgba(0, 50, 100, 0.4); 
+    
+    
+}
+[class*="funLine-"] {
     display: inline-block;
-    width: 49%;
-    vertical-align: top;
-  }
-  
-  #menu li a {
-    color: white;
-  }
-  
-  .scrollify {
-    height: 100vh;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0.5em;
+    padding-left:1vw; 
+    padding-right:1vw; 
+}
+[class*="funLine-"]:after {
+    content: "";
+    position: absolute;
     width: 100%;
-    background-color: orange;
-    text-align: center;
-    padding: 25% 0;
-    border: 1px solid black;
-  }
-  
-  .normal-scroll-item {
-    height: 100vh;
-    width: 100%;
-    background-color: lightblue;
-    text-align: center;
-    padding: 25% 0;
-    border: 1px solid black;
-  }
-  
-  footer {
-    background-color: blue;
-    padding: 10px;
-    color: white;
-    text-align: center;
-  }
+    height: 100%;
+    background: rgba(126, 74, 226, 0.8); 
+    box-shadow: -1px -2px 1px rgba(0, 50, 100, 0.4);
+    left: 0;
+    z-index: -1;
+}
+[class*="funLine-"]:nth-child(odd):after {
+    -webkit-transform: perspective(34em) rotateY(25deg) rotateX(-12deg);
+    -moz-transform:    perspective(34em) rotateY(25deg) rotateX(-12deg);
+    -ms-transform:     perspective(34em) rotateY(25deg) rotateX(-12deg);
+    -o-transform:      perspective(34em) rotateY(25deg) rotateX(-12deg);
+    transform:         perspective(34em) rotateY(25deg) rotateX(-12deg);
+    width: 111%;
+}
+[class*="funLine-"]:nth-child(even):after {
+    -webkit-transform: skewY(-1deg);
+    -moz-transform:    skewY(-1deg);
+    -ms-transform:     skewY(-1deg);
+    -o-transform:      skewY(-1deg);
+    transform:         skewY(-1deg);
+} 

@@ -1,5 +1,14 @@
 .parallax{background-image:url("./Black-and-white-mountains-in-fog.jpg");min-height:100vh;margin:0px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
-.centered{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);color:white;}
+@media only screen
+and (max-width:767px)
+and (orientation : landscape) {
+	.parallax {
+		min-height: 200vh;
+    }
+}
+
+
+.centered{position:relative;top:50%;left:50%;transform:translate(-50%, -50%);color:white;}
 .sec1-text1{font-family:'Dancing Script', cursive;font-size:1.5rem;}
 .sec1-text2{font-family:'Fredericka the Great', cursive;font-size:2rem;}
 .sec2-text1{font-family:'Dancing Script', cursive;font-size:1.5rem;}
@@ -31,3 +40,27 @@ hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0, 0, 0, 
 .fab:hover{color:#333;}
 @media (max-width:767px){section{ position:relative; }
 section span{ position:absolute; top:-350px;}}
+#container2 {
+    
+    position: relative;
+   
+    }
+    
+    @media only screen and (max-width: 479px){
+        #container2 { width: 90%; }
+    }
+    
+
+    .homepage {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+   
+    /* Centered text */
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
