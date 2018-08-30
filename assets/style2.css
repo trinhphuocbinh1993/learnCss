@@ -39,7 +39,7 @@ hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0, 0, 0, 
 .frame:hover{color:#333;}
 .fab:hover{color:#333;}
 @media (max-width:767px){section{ position:relative; }
-section span{ position:absolute; top:-350px;}}
+section span{ position:absolute; top:-142px;}}
 #container2 {
     
     position: relative;
