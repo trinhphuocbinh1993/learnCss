@@ -64,3 +64,21 @@ section span{ position:absolute; top:-142px;}}
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    /* move close button to top (lightbox2) and fix text */
+    .lb-data .lb-close {
+        position: absolute;
+        top: -50px;
+        margin-right: -50px;
+    }
+    .lb-data .lb-details {
+        width: 100%;
+        float: left;
+        text-align: justify;
+        line-height: 1.1em;
+    }
+    span.lb-caption {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1em;
+        text-align: justify;
+    }
