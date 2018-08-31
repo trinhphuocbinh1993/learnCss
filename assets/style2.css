@@ -37,13 +37,13 @@ hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0, 0, 0, 
 .social{text-align:center;color:white;}
 .frame{margin:0 10px 0 0;color:#fff;display:inline-block;width:38px;height:38px;border-radius:50%;line-height:38px;font-size:15px;text-align:center;-webkit-transition:all 0.3s;transition:all 0.3s;vertical-align:bottom;background-color:#555;}
 .frame:hover{color:#333;}
+.frame2{color:#fff;display:inline-block;width:100%;height:38px;line-height:38px;font-size:15px;text-align:center;-webkit-transition:all 0.3s;transition:all 0.3s;vertical-align:bottom;background-color:#555;}
+.frame2:hover{color:#333;}
 .fab:hover{color:#333;}
-@media (max-width:767px){section{ position:relative; }
+@media (max-width:769px){section{ position:relative; }
 section span{ position:absolute; top:-142px;}}
 #container2 {
-    
     position: relative;
-   
     }
     
     @media only screen and (max-width: 479px){
